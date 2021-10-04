@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="intro">the best page</p>
+    <h1>html dom </h1>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("intro").innerHTML="the text from the intro paragraph is ";
+        
+        
+        document.getElementById("demo").innerHTML="hello world!!"
+        
+        let element =document.getElementsByTagName("h1").innerText;
+        //document.getElementsByTagName("h1").innerText;
+        document.write(element)
+
+    </script>
+</body>
+</html>

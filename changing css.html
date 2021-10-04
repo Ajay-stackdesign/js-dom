@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id ="intro">hello world!>
+        <h1>where are you</h1>
+    </div> 
+    <div id ="demo">
+        <h1>where are you man</h1>
+        <h2>what going on!</h2>
+    </div>
+
+    <button type="button" onclick="document.getElementById('demo').style.color='green'">submit</button>
+    
+
+    <script>
+        document.getElementById("intro").style.color="blue";
+        document.querySelector("h2").style.color="red";
+        var element = document.querySelectorAll("#demo h2").style.color;
+        console.log(element)
+    </script>
+</body>
+</html>

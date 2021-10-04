@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <ul class="childul">
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+        </ul>
+    </div>
+    <script>
+        let element=document.createElement("li");
+        let text = document.createTextNode('i am a text node');
+        path=element.appendChild(text);
+        element.className='childul';
+        element.id='container';
+        element.setAttribute("title","mytitle")
+        //element.innerHTML = "<b>hello</b>"
+        let ul = document.querySelector("ul.childul")
+        ul.appendChild(element);
+        //console.log(path);
+        let elem2 = document.createElement("h3");
+        elem2.id="container";
+        elem2.className ="childul";
+        let tnode =document.createTextNode("this is a good game");
+        elem2.appendChild(tnode);
+
+    
+        
+    </script>
+</body>
+</html>

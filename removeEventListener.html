@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="resp">click me</button>
+    <script>
+        function show(){
+            alert("button clicked1")
+        }
+        function abc(){
+            alert("button clicked2")
+        }
+        var btn = document.getElementById("resp");
+        btn.addEventListener("click",show,true)
+        btn.addEventListener("click",show,false)
+
+        btn.removeEventListener("click",show,false)
+    </script>
+</body>
+</html>

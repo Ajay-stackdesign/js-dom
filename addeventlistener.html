@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert('button licked')">click me</button>
+    <button id="resp">click me</button>
+    <button id="myid">myid</button>
+    <p id ="one"></p>
+    <script>
+        document.getElementById("myid").addEventListener("click",trb)
+        function trb(){
+            document.getElementById("one").innerHTML=Date()
+        }       
+        document.getElementById("myid").addEventListener("click",trb)
+
+
+        function abc(){
+             alert("sab thik hai");
+        }
+       /*var btn = document.getElementById("resp");
+       btn.addEventListener("click",abc);*/
+
+         function desp(){
+            alert("tell me about yourself");
+         }
+        var btn = document.getElementById("resp");
+        btn.addEventListener("click",abc)
+        btn.addEventListener("click",desp)
+
+        function res(){
+            window.prompt("enter your name")
+        };
+        var rat =document.getElementById("resp");
+        rat.addEventListener("click",res,true);
+    </script>
+</body>
+</html>

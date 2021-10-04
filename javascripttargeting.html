@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        #header h1{
+            background-color: blueviolet;
+            color: white;
+            width: 1600px;
+            height: 100px;
+            padding: 10px;
+            display: table-cell;
+            vertical-align: middle;
+            border: 2px solid black;
+            text-indent: 40px;
+        }
+        #header nav{
+            background: red;
+            text-align: center;
+            
+        }
+        #header nav li{
+            display: inline;
+            text-align: center;
+        }
+        #header nav li a {
+            text-align: center;
+        }
+        nav+li{
+            text-transform: lowercase;
+        }
+        #menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 99.%;
+            height: 50px;
+            border: 2px solid black;
+        
+        }
+        #menu li a{
+            word-spacing: 30px;
+            padding: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+        }
+        #menu li a:hover{
+            background: brown;
+        }
+        #content{
+            margin-top: 0%;
+            text-transform: uppercase;
+            float: left;
+            width: 70%;
+            height: 400px;
+            background: rgb(7, 7, 7);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid blue;
+        }
+        .class{
+            margin-top: 0px;
+            display: block;
+            float: left;
+            width: 30%;
+            height: 400px;
+            background: rgb(187, 170, 21);
+            list-style-type: none;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 2px solid blue;
+        }
+        .class li {
+            vertical-align: middle;
+            padding: 10px;
+            margin: 10px;
+        }
+        .class li a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 20px;
+        }
+        .class li a:hover{
+            background-color: turquoise;
+            border: 2px solid black;
+        }
+        footer{
+            background: chocolate;
+            width: 1600px;
+            font-weight:900;
+            font-size: 40px;
+            padding: 20px;
+            text-align: end;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header" class="rampant" style="background-color:red";>
+        <h1>wow good website</h1>
+        <nav id="menu" style="color:blue">
+            <li><a href="www.home.com">HOME</a></li>
+            <li><a href="www.gallery.com">GALLERY</a></li>
+            <li><a href="www.carrer.com">CAReer</a></li>
+            <li><a href="www.product.com">product</a></li>
+            <li><a href="www.aboout_us.com">aboutus</a></li>
+        </nav>
+    </div>
+    <article>
+        <div id="content" class="list" onClick="FileList">
+            <p>kljhajdgkjhajaoihjvj;kAf89wevei</p>
+            <p>kljhajdgkjhajaoihjvj;kAf89wevei</p>
+            <p>kljhajdgkjhajaoihjvj;kAf89wevei</p>
+        </div>
+    </article>
+    <aside>
+        <div id="one" class="class">
+            <li><a href="www.home.com">home</a></li>
+            <li><a href="www.gallery.com">GALLERY</a></li>
+            <li><a href="www.carrer.com">CAReer</a></li>
+            <li><a href="www.product.com">product</a></li>
+            <li><a href="www.aboout_us.com">about us</a></li>
+        </div>
+    
+    </aside>
+    <footer>
+        <h2>ajaygsahani968@gmail.com</h2>
+    </footer>
+    <script>
+        // DOM GET METHOD
+        
+        //let element = document.getElementById("content").innerHTML;
+        //let element = document.getElementById("content").innerText;
+        //let element = document.getElementById("content").getAttributeNode("class").value;
+        //let element = document.getElementById("content").getAttribute("class")
+        
+        //let element=document.getElementById("content").attributes[2];
+        //console.log(element)
+        //DOM SET METHODS
+
+        //document.getElementById("content").innerText="wow god to see that"
+        //document.getElementById("content").innerHTML="<b>wow</b>"
+        //document.getElementById("content").setAttribute("style","background-color:pink");
+        //document.getElementById("content").removeAttribute("class")
+        //var element=document.getElementById("content");//.style.color="white";
+        //console.log(element)
+          
+         
+         // dom queryselctor 
+         // document.querySelector("#menu").innerHTML="<h1>the greet learning platform</h1>";
+         //var element=document.querySelector("#menu")//.getAttribute("class");
+         //console.log(element)
+        // var element=document.getElementsByClassName("rampant")
+         //console.log(element)
+         //var element=document.querySelector(".list");
+         //console.log(element)
+         //document.querySelector("#content").innerHTML;
+         //document.querySelector("#one").innerHTML="<h1>hi so good</h1>";
+         //document.querySelectorAll(".list")[0].innerHTML="<h1>wow</h1>";
+         //let element=document.querySelectorAll(".list")[0].innerHTML;
+         //let element = document.getElementsByClassName("list")
+         //console.log(element)
+         
+         //DOM CSS STYLING METHOD
+         //document.querySelector("header").style.backgroundColor="red";
+         //let w = document.querySelector("header").style.backgroundColor;
+         //console.log(w)
+          //document.querySelector("#menu").className="abc xyz";
+          //var element =  document.querySelector("#menu").className;
+          //c//onsole.log(element)
+          //document.querySelector("#header").classList="abc xyz def gif";
+          //var element =document.querySelector("#header").classList;
+          //console.log(element)
+
+          //classList method 
+          //1)add: add method is used to add multiple classname
+          //2)remove:remove method is used to remove className
+
+         document.querySelector("#header").classList.add("xyz","abc");
+         var element =document.querySelector("#header").classList;
+         console.log(element)
+         document.querySelector("#header").classList.remove("xyz","abc");
+         var we =document.querySelector("#header").classList;
+         console.log(we)
+         //event listener
+
+        function abc(){
+            document.getElementById("header").style.backgroundColor="red";
+         }
+         document.getElementById("header").onclick = "abc";
+        
+    </script>
+</body>
+</html>

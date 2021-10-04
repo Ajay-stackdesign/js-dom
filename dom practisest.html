@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="don">
+    <p clsss="intro">hello world!!</p>
+    <p>finding html element by id</p>
+    <p>secon element is best \\</p>
+    </div>
+    <form id="content" actions="www.w3schools.com">
+        <label for="fname">firstName</label>
+        <input type="text" name="fname" value="ajay"><br><br>
+        <label for="password">password</label>
+        <input type="password" name="password" value="sahani"><br>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+    <p id="demo"></p>
+
+    <script>
+        //finding html element by id
+        //const element = document.getElementById("intro");
+        // document.getElementById("demo").innerHTML = "the page is text of code "+document.getElementById("intro").innerHTML;
+        //finding html element by tag name
+        //const element = document.getElementsByTagName("p");
+        //document.getElementById("demo").innerHTML = "the page is best page"+element[0].innerHTML;
+
+        //finding html first element of id with respect to tag name:
+        
+        //const elem = document.getElementById("intro");
+        //const y = elem.getElementsByTagName("p");
+
+        //document.getElementById("demo").innerHTML = "wow so good to see you"+y[0].innerHTML;
+        //const del =document.getElementsByClassName("intro")
+        //document.getElementById("demo").innerHTML = "th text"+del.innerHTML;
+        //const x = document.querySelectorAll("p.intro");
+        //document.getElementById("demo").innerHTML = "the text is so good" + x.innerHTML;
+
+        //find html element using document.forms
+        
+
+        ///html object collections
+        const x = document.forms["content"];
+        let text="";
+        for(let i=0;i<x.length;i++){
+            text+=x.elements[i].type+"<br/>"
+        }
+        document.getElementById("demo").innerHTML=text;
+        </script>
+</body>
+</html>
